@@ -7,13 +7,15 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.1.0",
+    "@babel/polyfill": "^7.4.4",
+    "@mdi/font": "^3.6.95",
     "core-js": "^3.4.3",
     "firebase": "^7.5.0",
     "moment": "^2.24.0",
+    "roboto-fontface": "*",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
+    "vuetify": "^2.1.0",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
@@ -22,18 +24,18 @@
     "@vue/cli-plugin-router": "^4.1.0",
     "@vue/cli-plugin-vuex": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
-    "bootstrap": "^4.3.1",
     "mutationobserver-shim": "^0.3.3",
     "node-sass": "^4.12.0",
     "popper.js": "^1.15.0",
     "portal-vue": "^2.1.4",
     "sass-loader": "^8.0.0",
-    "vue-cli-plugin-bootstrap-vue": "^0.5.0",
     "vue-cli-plugin-format": "^1.0.0",
+    "vue-cli-plugin-vuetify": "^2.0.2",
     "vue-template-compiler": "^2.6.10"
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions"
+    "last 2 versions",
+    "not ie <= 10"
   ]
 }
