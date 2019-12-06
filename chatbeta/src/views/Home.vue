@@ -1,15 +1,9 @@
 <template>
   <v-container>
     <v-layout wrap>
-      <v-flex class="primary" xs12>
-        <h1>12</h1>
-      </v-flex>
-      <v-flex class="secondary" xs6>
-        <h1>6</h1>
-      </v-flex>
-      <v-flex class="error" xs6>
-        <h1>6</h1>
-      </v-flex>
+      
+      <Login></Login>
+      <register></register>
       
     </v-layout>
   </v-container>
@@ -18,11 +12,13 @@
 <script>
 // @ is an alias to /src
 import Login from '@/components/Login.vue'
+import Register from '@/components/Register.vue'
 
 export default {
   name: 'home',
   components: {
-    Login
+    Login,
+    Register
   }
 }
 </script>
