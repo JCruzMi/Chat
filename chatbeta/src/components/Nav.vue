@@ -22,6 +22,15 @@
       />
     </div>
 
+    <v-btn v-if="user" color="secondary" text disabled>
+        <span class="mr-2">{{user.displayName || user.email}}</span>
+        <v-avatar>
+          <img
+        src="https://cdn.vuetifyjs.com/images/john.jpg"
+      >
+        </v-avatar>
+    </v-btn>
+
     <v-spacer></v-spacer>
 
     <v-btn

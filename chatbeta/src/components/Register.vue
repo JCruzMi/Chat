@@ -118,7 +118,6 @@ export default {
               user.updateProfile({
                 displayName: this.name
               }).then((u) => {
-                console.log(user.displayName)
                 this.name=""
                 this.lastname=""
                 this.password=""
