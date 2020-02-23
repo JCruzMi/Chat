@@ -2,8 +2,7 @@
   <v-container>
     <v-layout wrap>
       
-      <Login></Login>
-      <register></register>
+      <h1>Pagina principal</h1>
       
     </v-layout>
   </v-container>
@@ -11,14 +10,8 @@
 
 <script>
 // @ is an alias to /src
-import Login from '@/components/Login.vue'
-import Register from '@/components/Register.vue'
 
 export default {
-  name: 'home',
-  components: {
-    Login,
-    Register
-  }
+  name: 'home'
 }
 </script>

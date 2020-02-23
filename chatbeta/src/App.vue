@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Nav></Nav>
+    <Navar></Navar>
 
     <v-content>
       <router-view></router-view>
@@ -10,14 +10,14 @@
 
 <script>
 import Home from './views/Home';
-import Nav from './components/Nav.vue'
+import Navar from './components/Navar.vue'
 
 export default {
   name: 'App',
 
   components: {
     Home,
-    Nav,
+    Navar,
   },
 
   data: () => ({

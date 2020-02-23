@@ -9,6 +9,7 @@
       max-width="600"
     >
       <v-img
+        transition="scale-transition"
         class="elevation-6"
         src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"
         max-height="200px"
@@ -70,7 +71,7 @@ export default {
     return {
       email: "",
       password: "",
-      errorText: null
+      errorText: null,
     };
   },
   methods: {

@@ -1,10 +1,13 @@
 <template>
-  <div class="about">
-    <h1>This is an User page</h1>
-  </div>
+  <Chat></Chat>
 </template>
 <script>
+
+import Chat from '@/components/Chat.vue'
+
 export default {
-  
+  components: {
+    Chat
+  }
 }
 </script>

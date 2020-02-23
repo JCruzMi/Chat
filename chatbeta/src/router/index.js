@@ -16,6 +16,7 @@ const routes = [
     path: '/user',
     name: 'user',
     component: () => import(/* webpackChunkName: "user" */ '../views/User.vue'),
+    props: true,
     meta: {
       requireAuth: true
     }
@@ -24,6 +25,11 @@ const routes = [
     path: '/register',
     name: 'register',
     component: () => import(/* webpackChunkName: "register" */ '../components/Register.vue')
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import(/* webpackChunkName: "login" */ '../components/Login.vue')
   }
 ]
 
@@ -40,7 +46,7 @@ router.beforeEach((to, from, next) => {
       next();
     } else{
       next({
-        name: '/'
+        name: 'home'
       })
     }
   }else{

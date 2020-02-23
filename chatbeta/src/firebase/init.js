@@ -1,5 +1,6 @@
-import firebase from 'firebase'
-import firestore from 'firebase/firestore'
+import firebase from '@firebase/app'
+
+require('firebase/firestore')
 
 var firebaseConfig = {
     apiKey: "AIzaSyBfCRtzGlBjVo86jZnrZfB1VwJu7tidixQ",
@@ -12,7 +13,14 @@ var firebaseConfig = {
     measurementId: "G-73E5LLXGGR"
   };
   // Initialize Firebase
-  const firebaseApp = firebase.initializeApp(firebaseConfig);
-  firebaseApp.firestore().settings({ timestampsInSnapshots : true });
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-  export default firebaseApp.firestore();
+firebaseApp.firestore().settings({ timestampsInSnapshots : true });
+
+const db = firebase.firestore()
+
+//export const users = db.ref('usuarios');
+
+//export const mensajes = db.ref('mensajes');
+
+export default firebaseApp.firestore();

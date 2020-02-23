@@ -9,6 +9,7 @@
       max-width="600"
     >
       <v-img
+        transition="scale-transition"
         class="elevation-6"
         src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"
         max-height="200px"
@@ -90,7 +91,7 @@
 
 <script>
 
-import db from'@/firebase/init.js'
+import {db,user} from'@/firebase/init.js'
 import firebase from 'firebase'
 
 export default {
@@ -124,6 +125,7 @@ export default {
                 this.password2=""
                 this.email=""   
                 this.$router.push({ name: 'user' })
+                
               }).catch((err) => {
                 this.error = err.message
               })
