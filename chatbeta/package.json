@@ -21,15 +21,15 @@
   },
   "devDependencies": {
     "@babel/polyfill": "^7.6.0",
-    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
     "@vue/cli-plugin-router": "^4.1.0",
     "@vue/cli-plugin-vuex": "^4.1.0",
-    "@vue/cli-service": "^4.1.0",
+    "@vue/cli-service": "^5.0.8",
     "mutationobserver-shim": "^0.3.3",
     "node-sass": "^7.0.0",
     "popper.js": "^1.15.0",
     "portal-vue": "^2.1.4",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^13.2.0",
     "vue-cli-plugin-format": "^1.0.0",
     "vue-cli-plugin-vuetify": "^2.0.2",
     "vue-template-compiler": "^2.6.10"
